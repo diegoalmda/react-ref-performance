@@ -1,0 +1,1 @@
+Testando passagem de referências entre componentes pais e filhos evitando renderizações desnecessárias; utilizando useRef, forwardRef e useImperativeHandle.
