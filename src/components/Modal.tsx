@@ -5,7 +5,7 @@ export interface ModalHandles {
 }
 
 const Modal: ForwardRefRenderFunction<ModalHandles> = (props, ref) => {
-  const [visible, setVisible] = useState(true)
+  const [visible, setVisible] = useState(false)
 
   const openModal = useCallback(() => {
     setVisible(true)
@@ -26,7 +26,7 @@ const Modal: ForwardRefRenderFunction<ModalHandles> = (props, ref) => {
   }
 
   return (
-    <div>
+    <div className="modal-content">
       Modal aberto
 
       <button onClick={handleCloseModal}>Fechar modal</button>

@@ -1,0 +1,59 @@
+:root {
+  --background: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: #000000;
+  font-family: helvetica, arial, sans-serif;
+}
+
+button {
+  background: #ffffff;
+  border: 1px solid #999999;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #dedede;
+}
+
+form,
+h3 {
+  margin-bottom: 2rem;
+}
+
+form,
+.App,
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-block {
+  padding: 1rem;
+}
+
+.modal-content {
+  margin: 2rem;
+  padding: 2rem;
+  background: #fcaeb7;
+  max-width: 90%;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 0.875rem;
+  }
+}
